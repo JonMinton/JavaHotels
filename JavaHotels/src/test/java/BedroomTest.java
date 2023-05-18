@@ -9,8 +9,8 @@ public class BedroomTest {
     Bedroom penthouse;
     @Before
     public void before() {
-        singleBedroom = new Bedroom(13, RoomType.SINGLE);
-        penthouse = new Bedroom(113, RoomType.PENTHOUSE);
+        singleBedroom = new Bedroom(13, RoomType.SINGLE, 35.50);
+        penthouse = new Bedroom(113, RoomType.PENTHOUSE, 2399);
     }
 
     @Test

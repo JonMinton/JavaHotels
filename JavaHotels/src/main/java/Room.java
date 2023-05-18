@@ -19,7 +19,14 @@ public abstract class Room {
     }
 
     public void addGuest(Guest guest) {
-        this.collection.add(guest);
+        if (this.collection.size() < capacity){
+            this.collection.add(guest);
+        }
+    }
+
+    public void removeGuest(Guest guest) {
+//        We might want to use the .contains method to check the guest is in the room first...
+            this.collection.remove(guest);
     }
 
     public int getNumGuests() {
