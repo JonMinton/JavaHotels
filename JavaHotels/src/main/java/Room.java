@@ -18,4 +18,12 @@ public abstract class Room {
         return collection;
     }
 
+    public void addGuest(Guest guest) {
+        this.collection.add(guest);
+    }
+
+    public int getNumGuests() {
+        return this.collection.size();
+    }
+
 }
